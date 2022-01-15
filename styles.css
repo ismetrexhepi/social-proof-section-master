@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
+:root {
+    /* Primary */
+    --a: hsl(300, 43%, 22%);
+    --b: hsl(333, 80%, 67%);
+
+    /* ### Neutral */
+
+    --c: hsl(303, 10%, 53%);
+    --d: hsl(300, 24%, 96%);
+    --e: hsl(0, 0%, 100%);
+}
+
+*{
+    font-family: 'Spartan', sans-serif;
+    box-sizing: border-box;
+
+}
+
+@media (min-width:601px){
+
+
+body {
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+    margin:0 auto;
+    width: 1440px;
+    height: 100vh;
+    font-size: 15px;
+    background-image: url("./images/bg-pattern-bottom-desktop.svg"),url("./images/bg-pattern-top-desktop.svg");
+    background-repeat: no-repeat , no-repeat;
+
+}
+
+
+h1 {
+    font-size: 40px;
+}
+
+.attribution {
+    margin:170px;
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+  .container {
+      display: flex;
+      flex-direction: column;
+      width: 1110px;
+
+  }
+  .wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top:-80px;
+      margin-bottom:50px;
+      
+  }
+
+  .text {
+      color:hsl(300, 43%, 22%);
+      width:70%;
+      font-weight: 700px;
+      
+  }
+  .stars {
+      margin-right: 20px;
+      margin-left:16rem;
+      width:100%
+  }
+  .stars p {
+      padding-top:15px;
+      padding-bottom: 15px;
+      
+
+  }
+p span {
+      padding-left:20px;
+  }
+
+.wrapper p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    color:hsl(303, 10%, 53%);
+}
+
+.testemonials {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    background-color: hsl(300, 43%, 22%);
+    width: 350px;
+    border-radius: 10px;
+    padding:30px;
+    height: 230px;
+}
+
+.bio {
+    display: flex;
+    align-items: center;
+}
+.bio img {
+    width: 50px;
+    border-radius: 50%;
+}
+.info {
+    padding-left:20px;
+}
+
+.info span {
+    display: block;
+}
+.name {
+    color:white;
+    font-weight: 700;
+    font-size: 14px;
+}
+.status {
+    color:hsl(333, 80%, 67%);
+    font-weight: 500;
+    font-size: 14px;
+    padding-top:5px;
+}
+
+.testemonials .card:nth-child(2){
+    margin-top:25px;
+}
+.testemonials .card:nth-child(3){
+    margin-top:50px;
+}
+.card p {
+    color:white;
+    font-size: 14px;
+    padding-top:15px;
+}
+.star {
+    display: flex;
+    align-items: center;
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+    padding-bottom: 40px;
+}
+.star img {
+    padding:2px;
+}
+.stars .star:nth-child(2){
+    margin-left: 40px;   
+}
+.stars .star:nth-child(3){
+    margin-left: 90px;   
+}
+.star span {
+    margin-left: 10px;
+}
+}
+
+@media (max-width: 600px) {
+   body {
+       width: 375px;
+       height: 1530px;
+         margin: 0 auto;
+         display: flex;
+         justify-content: center;
+       background-image: url("./images/bg-pattern-bottom-desktop.svg"),url("./images/bg-pattern-top-desktop.svg");
+        background-repeat: no-repeat , no-repeat;
+        font-family: 'Spartan', sans-serif;
+   }
+   .container{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       margin:0 auto;
+       width: 90%;
+       margin-top:60px;
+   }
+   h1 {
+       color:hsl(300, 43%, 22%);
+       font-weight: 700;
+   }
+   .wrapper{
+       text-align: center;
+      
+   }
+   
+   .wrapper p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    color:hsl(303, 10%, 53%);
+}
+.card {
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 10px;
+    padding:40px 30px;
+    margin:20px 0;
+}
+.card p {
+    color:white;
+    font-size:13px;
+}
+.bio {
+    display: flex;
+    align-items: center;
+    martin-bottom:20px;
+    
+}
+    .bio img {
+        border-radius: 50%;
+        width:50px;
+    }
+    .info {
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+        
+    }
+    .star {
+        background-color: hsl(300, 24%, 96%);
+        border-radius: 10px;
+        margin:20px 0;
+    }
+    .star div {
+        padding:15px 0; 
+    }
+    .star span{
+        padding:15px 0; 
+        color:hsl(300, 43%, 22%);
+        font-weight: 700;
+    }
+    .name {
+        color:white;
+        font-weight: 500;
+        
+    }
+    .status {
+        color: hsl(333, 80%, 67%) !important;
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+}
